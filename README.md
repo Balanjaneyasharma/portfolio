@@ -1,8 +1,8 @@
 # Balu Sharma - Software Engineer Portfolio
 
-Personal portfolio website for Balu Sharma, a software engineer focused on building reliable, accessible, and polished web applications with Angular, TypeScript, .NET, and C#.
+A responsive personal portfolio for Balu Sharma, showcasing software engineering experience, technical skills, selected projects, resume, and contact details.
 
-The site presents my experience, technical skills, career journey, selected projects, resume, and contact details.
+Live website: [My Porfolio](https://portfolio-jade-theta-1kqcxyqbyr.vercel.app)
 
 ## Features
 
