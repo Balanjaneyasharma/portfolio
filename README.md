@@ -53,50 +53,82 @@ This project uses Tailwind CSS for styling with the following features:
 - Utility-first approach for rapid development
 - Custom theme configuration
 - Responsive design utilities
-- PostCSS and Autoprefixer integration
+# Balu Sharma - Software Engineer Portfolio
 
-## 📦 Available Scripts
+Personal portfolio website for Balu Sharma, a software engineer focused on building reliable, accessible, and polished web applications with Angular, TypeScript, .NET, and C#.
 
-- `npm run dev` - Start development server on port 4028
-- `npm run build` - Build the application for production
-- `npm run start` - Start the development server
-- `npm run serve` - Start the production server
-- `npm run lint` - Run ESLint to check code quality
-- `npm run lint:fix` - Fix ESLint issues automatically
-- `npm run format` - Format code with Prettier
+The site presents my experience, technical skills, career journey, selected projects, resume, and contact details.
 
-## 📱 Deployment
+## Features
 
-Build the application for production:
+- Responsive portfolio experience for desktop and mobile
+- Dark and light theme support
+- Sections for about, journey, experience, skills, projects, and contact
+- Resume download link
+- Contact form powered by [Formspree](https://formspree.io)
+- SEO routes for `robots.txt` and `sitemap.xml`
+- Built with Next.js App Router and TypeScript
 
-  ```bash
-  npm run build
-  ```
+## Tech Stack
 
-### Contact form email
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Lucide React and Heroicons
+- Formspree for contact form delivery
 
-The contact form sends messages through [Resend](https://resend.com). Add these values to `.env` for local development and to your hosting provider's environment variables:
+## Run Locally
 
-```env
-RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxxx
-CONTACT_EMAIL=balanjaneyasarma@gmail.com
+Install dependencies:
+
+```bash
+npm install
 ```
 
-Create an API key in Resend, then verify the domain you use for the sender address before switching from `onboarding@resend.dev` in `src/app/api/contact/route.ts` to your verified address. Keep `RESEND_API_KEY` server-only and never prefix it with `NEXT_PUBLIC_`.
+Start the development server:
 
-## 📚 Learn More
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:4028](http://localhost:4028) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial
+## Available Scripts
 
-You can check out the [Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server on port 4028 |
+| `npm run type-check` | Run the TypeScript compiler without emitting files |
+| `npm run build` | Create an optimized production build |
+| `npm run serve` | Serve the production build locally |
+| `npm run lint` | Run the project lint check |
+| `npm run format` | Format source files with Prettier |
 
-## 🙏 Acknowledgments
+## Project Structure
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by Next.js and React
-- Styled with Tailwind CSS
+```text
+src/
+├── app/                 # App Router pages, metadata, and SEO routes
+│   └── components/      # Portfolio sections
+├── components/          # Shared UI components
+├── context/             # Theme context
+├── data/                # Portfolio content and project data
+└── styles/              # Tailwind and global styles
+public/                  # Static images, logo, and resume assets
+```
 
-Built with ❤️ on Rocket.new
+## Contact Form
+
+The contact form sends the visitor's name, email address, and message to the configured Formspree form. Formspree notification settings control which email inbox receives submissions.
+
+## Deployment
+
+This project can be deployed on Vercel or Netlify. For a Vercel deployment:
+
+1. Import the GitHub repository.
+2. Keep the framework preset as Next.js.
+3. Set `NEXT_PUBLIC_SITE_URL` to the deployed site URL.
+4. Deploy and verify the contact form, resume link, and navigation.
+
+The `.env` file is ignored by Git and should never be committed to the repository.
