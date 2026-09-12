@@ -115,9 +115,7 @@ export default function ContactSection() {
             Let's Build Something <span className="gradient-text">Together</span>
           </h2>
           <p className="reveal-blur text-muted-foreground max-w-xl mx-auto text-sm leading-relaxed" style={{ transitionDelay: '0.1s' }}>
-            I'm currently open to new opportunities and interesting projects. Whether you're
-            looking for a frontend engineer to join your team or need help with a specific
-            project, I'd love to hear from you.
+            I'm open to Software Engineer roles across frontend and backend. If you're working on an interesting problem or have an opportunity in mind, I'd love to hear from you.
           </p>
         </div>
 

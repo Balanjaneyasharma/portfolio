@@ -101,7 +101,7 @@ export default function JourneyTimeline() {
             <span className="char-reveal text-muted-foreground" style={{ transitionDelay: '0.50s' }}>e</span>
           </h2>
           <p className="reveal-blur text-muted-foreground text-sm mt-2" style={{ transitionDelay: '0.2s' }}>
-            A visual overview of educational and professional milestones from 2017 to present.
+            A few milestones that shaped where I am today.
           </p>
         </div>
 
