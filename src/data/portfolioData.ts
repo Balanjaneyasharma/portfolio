@@ -114,7 +114,7 @@ export const projects: Project[] = [
     id: 'proj-1',
     title: 'URL Shortener Service',
     description:
-      'Turn a long URL into a short, shareable one. Built in C# with Clean Architecture — separate domain, infrastructure, and API layers, backed by PostgreSQL and EF Core.',
+      'Shortens long URLs into shareable links via a REST API — built in C# with Clean Architecture across domain, infrastructure, and API layers, backed by PostgreSQL and EF Core. The real lesson was judging where those boundaries actually earned their keep versus where they were just ceremony for a domain this small.',
     tags: ['C#', 'Clean Architecture', 'PostgreSQL', 'EF Core'],
     githubUrl: 'https://github.com/Balanjaneyasharma/URL-Shortener-Service',
     liveUrl: null,
@@ -125,7 +125,7 @@ export const projects: Project[] = [
     id: 'proj-2',
     title: 'Input Components',
     description:
-      'A playground of custom Angular input components — including nested checkboxes — built to explore complex form state and component composition beyond what off-the-shelf libraries offer.',
+      'A playground of custom Angular input components, including a nested checkbox tree that propagates check-state both upward and downward without triggering recursive update loops. Building it surfaced real gaps in how Angular change detection behaves with recursive component trees — the kind of edge case off-the-shelf libraries tend to hide from you.',
     tags: ['Angular', 'TypeScript', 'RxJS'],
     githubUrl: 'https://github.com/Balanjaneyasharma/input-components',
     liveUrl: null,
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     id: 'proj-3',
     title: 'Core-JS',
     description:
-      'Hand-rolled implementations of core JavaScript methods and features, built to understand what\'s actually happening under the hood — not just how to use them.',
+      'Hand-rolled implementations of core JavaScript methods, matching native spec behavior on edge cases most tutorials skip — including how `Array.prototype.map` handles sparse arrays, how `thisArg` is threaded through callbacks, and how array-like inputs are handled. The project is less about recreating familiar methods and more about understanding the behavior hidden behind their simple APIs.',
     tags: ['JavaScript', 'TypeScript'],
     githubUrl: 'https://github.com/Balanjaneyasharma/Core-JS',
     liveUrl: null,
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     id: 'proj-4',
     title: 'Mock API Server',
     description:
-      'A lightweight npm package for mocking API responses during frontend development — install it, define your fake endpoints, and build without waiting on a backend.',
+      'An npm CLI that spins up a mock API server from a JSON schema — install it, define endpoints, and build frontend features without waiting on a backend. Getting the schema flexible enough for realistic nested responses without turning configuration into its own mini-language was the tricky part.',
     tags: ['Node.js', 'npm package'],
     githubUrl: 'https://github.com/Balanjaneyasharma/mock-api-server',
     liveUrl: null,
