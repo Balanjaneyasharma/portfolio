@@ -103,11 +103,11 @@ export default function ContactSection() {
     <section
       ref={sectionRef}
       id="contact"
-      className="py-24 border-t border-border"
+      className="pt-8 pb-16 md:pt-12 md:pb-20 border-t border-border"
     >
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-muted mb-3">
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Contact</span>
           </div>

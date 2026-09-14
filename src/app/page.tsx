@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/app/components/HeroSection';
-import AboutSection from '@/app/components/AboutSection';
 import JourneyTimeline from '@/app/components/JourneyTimeline';
 import ExperienceSection from '@/app/components/ExperienceSection';
 import SkillsSection from '@/app/components/SkillsSection';
@@ -26,11 +25,10 @@ export default function HomePage() {
 
       <main>
         <HeroSection />
-        <AboutSection />
         <JourneyTimeline />
         <ExperienceSection />
-        <SkillsSection />
         <ProjectsSection />
+        <SkillsSection />
         <ContactSection />
       </main>
 
