@@ -40,7 +40,7 @@ export default function SkillsSection() {
             </h2>
           </div>
           <p className="reveal-blur text-muted-foreground text-sm max-w-xs font-mono" style={{ transitionDelay: '0.1s' }}>
-            // Languages · Frameworks · Data · Tools
+            // Frontend · Backend · Languages · Tools
           </p>
         </div>
 
