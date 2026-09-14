@@ -6,11 +6,10 @@ import { useTheme } from '@/context/ThemeContext';
 import Icon from '@/components/ui/AppIcon';
 
 const navLinks = [
-  { label: 'About', href: '#about' },
   { label: 'Journey', href: '#journey' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -21,7 +20,7 @@ export default function Header() {
   const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
-    const sections = ['about', 'journey', 'experience', 'skills', 'projects', 'contact']
+    const sections = ['journey', 'experience', 'skills', 'projects', 'contact']
       .map(id => document.getElementById(id))
       .filter((section): section is HTMLElement => Boolean(section));
 

@@ -113,13 +113,32 @@ export default function HeroSection() {
               </div>
             </h1>
 
-            {/* Subtitle */}
+            {/* Single positioning statement */}
             <p
-              className="text-lg text-muted-foreground max-w-xl leading-relaxed opacity-0 translate-y-4"
+              className="text-lg text-muted-foreground max-w-2xl leading-relaxed opacity-0 translate-y-4"
               style={{ animation: 'fadeInUp 0.7s cubic-bezier(0.16,1,0.3,1) 1.2s forwards' }}
             >
-              Software Engineer based in Hyderabad, building enterprise HR applications at Keka HR.
+              <span className="gradient-text text-xl font-semibold md:text-2xl">I'm Balanjaneya Sharma</span> — I build real-world products and developer tools, often starting from core concepts and clean abstractions. Currently at Keka HR, exploring how AI fits into the tools I build.
             </p>
+
+            {/* Credibility and availability */}
+            <div
+              className="flex flex-wrap items-center gap-2 opacity-0 translate-y-4"
+              style={{ animation: 'fadeInUp 0.7s cubic-bezier(0.16,1,0.3,1) 1.3s forwards' }}
+            >
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1.5 text-xs text-muted-foreground backdrop-blur-sm">
+                <span aria-hidden="true">🚀</span>
+                3+ Yrs Experience
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1.5 text-xs text-muted-foreground backdrop-blur-sm">
+                <span aria-hidden="true">🏢</span>
+                Keka HR
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1.5 text-xs text-muted-foreground backdrop-blur-sm">
+                <span aria-hidden="true" className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                Open to Work
+              </span>
+            </div>
 
             {/* CTAs */}
             <div
@@ -132,6 +151,13 @@ export default function HeroSection() {
               >
                 <Icon name="ArrowDownTrayIcon" size={16} />
                 Download Resume
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/40 bg-primary/5 text-primary text-sm font-medium hover:bg-primary/10 transition-all duration-200"
+              >
+                View Projects
+                <Icon name="ArrowRightIcon" size={16} />
               </a>
             </div>
           </div>
@@ -205,13 +231,13 @@ export default function HeroSection() {
 
         {/* Scroll indicator */}
         <div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-100"
+          className="relative mt-10 flex flex-col items-center gap-2 opacity-100 lg:absolute lg:bottom-8 lg:left-1/2 lg:mt-0 lg:-translate-x-1/2"
           style={{ animation: 'fadeInUp 0.6s cubic-bezier(0.16,1,0.3,1) 2s forwards' }}
         >
           <span className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">Scroll</span>
           <div className="w-px h-8 bg-gradient-to-b from-border to-transparent" />
           <a
-            href="#about"
+            href="#journey"
             className="font-mono text-[10px] text-primary uppercase tracking-widest hover:text-foreground transition-colors duration-200"
           >
             Explore Me
