@@ -159,16 +159,16 @@ export const projects: Project[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
+    label: 'Frontend',
+    skills: ['Angular', 'React', 'RxJS', 'NgRx', 'Jest (testing)'],
+  },
+  {
+    label: 'Backend',
+    skills: ['.NET / ASP.NET Core', 'SQL Server', 'MongoDB'],
+  },
+  {
     label: 'Languages',
     skills: ['TypeScript', 'JavaScript', 'C#'],
-  },
-  {
-    label: 'Frameworks / Libraries',
-    skills: ['Angular', '.NET / ASP.NET Core', 'RxJS', 'NgRx', 'React', 'Jest'],
-  },
-  {
-    label: 'Data / Backend',
-    skills: ['SQL Server', 'MongoDB'],
   },
   {
     label: 'Tools',
